@@ -3,7 +3,7 @@ CPPFLAGS=-g -std=c++11 -O0 -Wall -Wextra -Isrc -rdynamic -DNDEBUG $(OPTFLAGS)
 LDFLAGS=$(OPTLIBS)
 PREFIX?=/usr/local
 
-SOURCES=$(wildcard src/**/*.cpp src/*.cpp)
+SOURCES=$(wildcard src/**/*.cpp src/*.cpp tests/lmock.cpp)
 OBJECTS=$(patsubst %.cpp,%.o,$(SOURCES))
 
 TEST_SRC=$(wildcard tests/*_tests.cpp tests/leetcode/*_tests.cpp)
