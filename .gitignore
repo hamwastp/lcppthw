@@ -1,0 +1,7 @@
+.*.sw*
+*.o
+*.dSYM
+tests/*_tests
+tests/*.log
+build
+tests/leetcode/*_tests
