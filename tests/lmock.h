@@ -1,3 +1,7 @@
+/**
+ * refer: https://github.com/wangyongfeng5/lmock 
+ */
+
 #pragma once
 
 #include <stdio.h>

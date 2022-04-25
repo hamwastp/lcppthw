@@ -132,7 +132,7 @@ MU_TEST(system)
     return NULL;
 }
 
-//另外第三方库，如mysql，也是可以支持mock的
+//另外第三方库，如mysql，main, 函数也是可以支持mock的
 
 RUN_TESTS_EX()
 
@@ -156,4 +156,5 @@ int fake_main(int argc, char* argv[])
 __attribute((constructor)) void mock_main()
 {
     mock(main, fake_main);
+    reset();
 }
